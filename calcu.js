@@ -23,3 +23,20 @@ teclas.forEach(function(tecla){
         pantalla[0].textContent += tecla.innerText;//text:nodo que contiene el texto encerrado por una etiqueta XHTML.Comment: representa los comentarios incluidos en la página XHTML.
     } );
 });
+
+operadores.forEach(function(operador){
+    operador.addEventListener("click", function(){
+        anterior=parseFloat(pantalla[0].textContent);//El método Number.parseFloat() analiza un argumento y devuelve un número de punto flotante. 
+        pantalla[0].textContent="";
+        operacion=operador.innerText;
+    });
+});
+borrar.forEach(function(borrar){
+    borrar.addEventListener("click", function(){
+       actual=parseFloat(pantalla[0].textContent)
+       pantalla[0].textContent="";
+       actual=0;
+       anterior=0;
+
+    })
+})
