@@ -40,3 +40,31 @@ borrar.forEach(function(borrar){
 
     })
 })
+
+igual.forEach(function(igual) 
+{
+    igual.addEventListener("click", function() 
+    {
+        actual = parseFloat(pantalla[0].textContent);
+        pantalla[0].textContent = "";
+
+        switch(operacion)/*El condicional switch case es una estructura que evalúa más de un caso y se caracteriza por: 
+        Selección de una opción entre varias. Switch recibe un “caso” y lo evalúa hasta encontrar el caso que corresponda.*/
+        {
+            case "+":
+                     pantalla[0].textContent = "" + (actual + anterior);
+                     break;//la sentencia break permite terminar de forma abrupta un bucle una vez que la variable toma un determinado valor
+            case "-":
+                     pantalla[0].textContent = "" + (anterior - actual);
+                     break;
+            case "*":
+                     pantalla[0].textContent = "" + (actual * anterior);
+                     break;
+            case "/":
+                     pantalla[0].textContent = "" + (anterior / actual);
+                     break;
+                      
+        }
+
+    });
+});
