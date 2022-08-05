@@ -1,0 +1,28 @@
+*{
+    margin: 10px;
+    padding: 0px;
+    border-radius: 5%;
+}
+.calcu {
+    display: grid;
+    grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4];
+    grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3] 1fr [y4];
+    width: 440px;
+    height: 530px;
+    margin: 50px auto;
+    background-color:rgb(0, 183, 255);
+}
+.calcu .pantalla {
+    overflow: hidden;
+    height: 110px;
+    width: 410px;
+    grid-column: x0 / x4;
+    grid-row: y0 / y1;
+    border: 1px solid black ;
+    background: rgba(153, 159, 172, 0.459);
+    font-size: 50px;
+    border-radius: 10%;
+    margin-left: 15px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
